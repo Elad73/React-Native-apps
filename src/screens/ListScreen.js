@@ -9,14 +9,12 @@ const ListScreen = () => {
         { name: 'Friend #4', age: 15 },
         { name: 'Friend #5', age: 25 },
         { name: 'Friend #6', age: 2 },
-        { name: 'Friend #6', age: 15 }
+        { name: 'Friend #7', age: 15 }
     ];
     return (
         <FlatList
             showsVerticalScrollIndicator={false}
-            keyExtractor={(obj) => {
-                obj.name;
-            }}
+            keyExtractor={(friend) => friend.name}
             data={friends}
             renderItem={({ item }) => {
                 return (
