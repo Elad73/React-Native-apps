@@ -20,6 +20,11 @@ const HomeScreen = ({ navigation: { navigate } }) => {
                 onPress={() => navigate('Image')}
                 title='Go to Image Screen'
             />
+            <Button
+                style={styles.button}
+                onPress={() => navigate('Color')}
+                title='Go to Color Screen'
+            />
         </View>
     );
 };
@@ -28,6 +33,9 @@ const styles = StyleSheet.create({
     header: {
         fontSize: 45,
         color: '#9562ea'
+    },
+    button: {
+        color: '#f547c3'
     }
 });
 
