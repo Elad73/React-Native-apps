@@ -3,14 +3,33 @@ import { Text, View, StyleSheet, TextInput } from 'react-native';
 
 const BoxScreen = () => {
     return (
-        <View>
-            <Text>Box Screen</Text>
+        <View style={styles.viewStyle}>
+            <Text style={styles.text1Style}>Box #1</Text>
+            <Text style={styles.text2Style}>Box #2</Text>
+            <Text style={styles.text3Style}>Box #3</Text>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    input: { margin: 15, borderColor: 'black', borderWidth: 1 }
+    viewStyle: {
+        borderWidth: 3,
+        borderColor: 'black',
+        height: 200
+    },
+    text1Style: {
+        borderWidth: 3,
+        borderColor: 'red'
+    },
+    text2Style: {
+        borderWidth: 3,
+        borderColor: 'red',
+        alignSelf: 'center'
+    },
+    text3Style: {
+        borderWidth: 3,
+        borderColor: 'red'
+    }
 });
 
 export default BoxScreen;
